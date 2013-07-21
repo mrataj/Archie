@@ -10,7 +10,7 @@
   /// <summary>
   /// Starting point for our application.
   /// </summary>
-  public class MvcApplication : HttpApplication
+  public class WebApplication : HttpApplication
   {
     /// <summary>
     /// Triggers when application starts.
