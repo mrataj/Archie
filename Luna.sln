@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{C38623
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luna.Web.Script", "Luna.Web.Script\Luna.Web.Script.csproj", "{C7B381EE-D050-4CA8-A3CF-8423A63B6E9C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,10 @@ Global
 		{FE94C6AC-3500-43A5-8BBA-7B5BF1AADBFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE94C6AC-3500-43A5-8BBA-7B5BF1AADBFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE94C6AC-3500-43A5-8BBA-7B5BF1AADBFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7B381EE-D050-4CA8-A3CF-8423A63B6E9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7B381EE-D050-4CA8-A3CF-8423A63B6E9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7B381EE-D050-4CA8-A3CF-8423A63B6E9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7B381EE-D050-4CA8-A3CF-8423A63B6E9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
