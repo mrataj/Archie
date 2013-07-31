@@ -2,6 +2,8 @@
 {
   using System.Web.Mvc;
 
+  using Luna.Web.Models;
+
   /// <summary>
   /// Simple home controller.
   /// </summary>
@@ -13,7 +15,8 @@
     /// <returns>View result with home view.</returns>
     public ActionResult Index()
     {
-      return this.View("~/Views/Home/Home.cshtml");
+      var model = new HomeModel { Message = "Hello, Luna!" };
+      return this.View("~/Views/Home/Home.cshtml", model);
     }
   }
 }

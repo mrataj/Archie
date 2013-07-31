@@ -1,14 +1,18 @@
-﻿@{
-    ViewBag.Title = "Luna";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+﻿@using Luna.Web.Models
+
+@{
+  ViewBag.Title = "Luna";
+  Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Hello, Luna!</h2>
+@model HomeModel
+
+<h2>@Model.Message</h2>
 
 @section Scripts
 {
   <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
       var page = new Luna.Web.Script.Pages.Page();
     });
   </script>
