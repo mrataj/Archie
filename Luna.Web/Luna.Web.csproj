@@ -143,6 +143,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\site.css" />
     <Content Include="Global.asax" />
     <Content Include="CodeAnalysisRules.ruleset" />
     <Content Include="Content\less\base.less" />
