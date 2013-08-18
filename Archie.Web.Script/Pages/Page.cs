@@ -25,7 +25,7 @@ namespace Archie.Web.Script.Pages
     /// <returns>Routes collection.</returns>
     private object GetRoutes()
     {
-      string json = jQuery.Select("input[name='Model/Routes'").GetValue();
+      string json = jQuery.Select("input[name='Model/Routes']").GetValue();
       return Json.Parse(json);
     }
   }
