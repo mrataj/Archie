@@ -1,0 +1,19 @@
+﻿@using Archie.Web.Models
+
+@{
+  ViewBag.Title = "Archie";
+  Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model HomeModel
+
+<h2>@Model.Message</h2>
+
+@section Scripts
+{
+  <script type="text/javascript">
+    $(document).ready(function () {
+      var page = new Archie.Web.Script.Pages.Page();
+    });
+  </script>
+}
