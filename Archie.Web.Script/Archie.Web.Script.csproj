@@ -8,8 +8,8 @@
     <ProjectGuid>{C7B381EE-D050-4CA8-A3CF-8423A63B6E9C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Luna.Web.Script</RootNamespace>
-    <AssemblyName>Luna.Web.Script</AssemblyName>
+    <RootNamespace>Archie.Web.Script</RootNamespace>
+    <AssemblyName>Archie.Web.Script</AssemblyName>
     <ScriptTemplate>Properties\Script.template</ScriptTemplate>
     <CodeAnalysisRuleSet>Properties\FxCop.ruleset</CodeAnalysisRuleSet>
     <GenerateScript>True</GenerateScript>
@@ -18,7 +18,7 @@
     <RestorePackages>true</RestorePackages>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <OutputPath>..\Luna.Web\Scripts\Generated\</OutputPath>
+    <OutputPath>..\Archie.Web\Scripts\Generated\</OutputPath>
     <DefineConstants>DEBUG;CODE_ANALYSIS;SCRIPTSHARP</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -33,7 +33,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0028, 1591, 1684</NoWarn>
-    <DocumentationFile>bin\Release\Luna.Web.Script.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\Archie.Web.Script.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <None Include="packages.config" />

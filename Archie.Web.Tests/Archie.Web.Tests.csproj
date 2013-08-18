@@ -9,8 +9,8 @@
     <ProjectGuid>{FE94C6AC-3500-43A5-8BBA-7B5BF1AADBFA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Luna.Web.Tests</RootNamespace>
-    <AssemblyName>Luna.Web.Tests</AssemblyName>
+    <RootNamespace>Archie.Web.Tests</RootNamespace>
+    <AssemblyName>Archie.Web.Tests</AssemblyName>
     <StyleCopTreatErrorsAsWarnings>false</StyleCopTreatErrorsAsWarnings>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -108,7 +108,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Archie.Web\Archie.Web.csproj">
       <Project>{4F7EC136-620F-447D-921C-2BDA23513023}</Project>
-      <Name>Luna.Web</Name>
+      <Name>Archie.Web</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
