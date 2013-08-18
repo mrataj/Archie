@@ -1,7 +1,10 @@
 namespace Archie.Web.Script.Pages
 {
+  using System.Collections.Generic;
   using System.Html;
   using System.Serialization;
+
+  using Archie.Web.Script.Models;
 
   using jQueryApi;
 
@@ -16,17 +19,17 @@ namespace Archie.Web.Script.Pages
     public Page()
     {
       Window.Document.Title = "Hello, Archie!";
-      Window.Document.Title = this.GetRoutes().ToString();
+      Window.Document.Title = this.GetRoutes().Count.ToString();
     }
 
     /// <summary>
     /// Gets routes from DOM.
     /// </summary>
     /// <returns>Routes collection.</returns>
-    private object GetRoutes()
+    private List<RouteModel> GetRoutes()
     {
       string json = jQuery.Select("input[name='Model/Routes']").GetValue();
-      return Json.Parse(json);
+      return Json.ParseData<List<RouteModel>>(json);
     }
   }
 }
