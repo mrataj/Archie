@@ -1,4 +1,4 @@
-﻿namespace Archie.Web.Models.Routes
+﻿namespace Archie.Web.Models
 {
   /// <summary>
   /// Model with information about route.

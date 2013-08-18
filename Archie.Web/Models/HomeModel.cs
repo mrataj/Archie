@@ -1,20 +1,28 @@
 ﻿namespace Archie.Web.Models
 {
-  using Archie.Web.Models.Routes;
-
+  using System.Collections.Generic;
+  
   /// <summary>
   /// Model for home view.
   /// </summary>
   public class HomeModel
   {
     /// <summary>
+    /// Initializes a new instance of the HomeModel class.
+    /// </summary>
+    public HomeModel()
+    {
+      this.Routes = new List<RouteModel>();
+    }
+
+    /// <summary>
     /// Gets or sets message.
     /// </summary>
     public string Message { get; set; }
 
     /// <summary>
-    /// Gets or sets collection of routes.
+    /// Gets list of registered url routes on server.
     /// </summary>
-    public RoutesModel Routes { get; set; }
+    public IList<RouteModel> Routes { get; private set; }
   }
 }

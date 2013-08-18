@@ -9,12 +9,9 @@
 
 <h2>@Model.Message</h2>
 
-@{
-  var x = 0;
-}
-
 @section Scripts
 {
+  <object id="routes" data-collection="@Model.Routes.ToString()"></object>
   <script type="text/javascript">
     $(document).ready(function () {
       var page = new Archie.Web.Script.Pages.Page();

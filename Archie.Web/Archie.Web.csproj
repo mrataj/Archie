@@ -140,8 +140,7 @@
     </Compile>
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Models\HomeModel.cs" />
-    <Compile Include="Models\Routes\RouteModel.cs" />
-    <Compile Include="Models\Routes\RoutesModel.cs" />
+    <Compile Include="Models\RouteModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
