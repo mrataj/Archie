@@ -65,7 +65,7 @@
 
       var tagBuilder = new TagBuilder("input");
       tagBuilder.MergeAttributes(htmlAttributes);
-      tagBuilder.MergeAttribute("name", name);
+      tagBuilder.MergeAttribute("name", "Model/" + name);
       tagBuilder.MergeAttribute("type", "hidden");
 
       var json = JsonConvert.SerializeObject(metadata.Model);
