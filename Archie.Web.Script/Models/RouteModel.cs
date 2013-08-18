@@ -12,5 +12,10 @@
     /// Gets or sets url pattern for this route.
     /// </summary>
     public string Url;
+
+    /// <summary>
+    /// Gets or sets name of this route.
+    /// </summary>
+    public string Name;
   }
 }

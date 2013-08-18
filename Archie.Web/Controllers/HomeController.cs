@@ -41,7 +41,8 @@
       {
         var routeModel = new RouteModel
           {
-            Url = route.Url
+            Url = route.Url,
+            Name = GetRouteName(route)
           };
         routes.Add(routeModel);
       }

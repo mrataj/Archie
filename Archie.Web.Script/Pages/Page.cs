@@ -4,6 +4,7 @@ namespace Archie.Web.Script.Pages
   using System.Html;
   using System.Serialization;
 
+  using Archie.Web.Script.Engine;
   using Archie.Web.Script.Models;
 
   using jQueryApi;
@@ -19,7 +20,7 @@ namespace Archie.Web.Script.Pages
     public Page()
     {
       Window.Document.Title = "Hello, Archie!";
-      Window.Document.Title = this.GetRoutes().Count.ToString();
+      Url.RegisterRoutes(this.GetRoutes());
     }
 
     /// <summary>
