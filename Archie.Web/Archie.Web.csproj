@@ -143,6 +143,7 @@
     <Compile Include="Models\HomeModel.cs" />
     <Compile Include="Models\RouteModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Provider\RoutesProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
