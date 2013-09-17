@@ -16,7 +16,9 @@
 
   <script type="text/javascript">
     $(document).ready(function () {
-      var page = new Archie.Web.Script.Pages.Page();
+      var routesJson = $('input[name="Model/Routes"]').val();
+      var routes = JSON.parse(routesJson);
+      Url.registerRoutes(routes);
     });
   </script>
 }

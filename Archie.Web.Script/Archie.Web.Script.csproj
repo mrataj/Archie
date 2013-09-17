@@ -39,10 +39,11 @@
     <None Include="packages.config" />
     <None Include="Properties\FxCop.ruleset" />
     <None Include="Properties\Script.template" />
+    <Compile Include="Engine\IRouteParser.cs" />
     <Compile Include="Engine\Url.cs" />
+    <Compile Include="Engine\MvcRouteParser.cs" />
     <Compile Include="Models\RouteModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Pages\Page.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Script.jQuery">
