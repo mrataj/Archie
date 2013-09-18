@@ -71,8 +71,12 @@
     {
       if (url.EndsWith("/"))
       {
+        // Remove slash at the end
         return url.Substring(0, url.Length - 1);
       }
+
+      // Remove slash if it comes before ? character
+      url = url.Replace("/?", string.Empty);
 
       return url;
     }
