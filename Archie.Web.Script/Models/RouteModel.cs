@@ -11,11 +11,13 @@
     /// <summary>
     /// Gets or sets url pattern for this route.
     /// </summary>
-    public string Url;
+    [PreserveCase]
+    public string Path;
 
     /// <summary>
     /// Gets or sets name of this route.
     /// </summary>
+    [PreserveCase]
     public string Name;
   }
 }

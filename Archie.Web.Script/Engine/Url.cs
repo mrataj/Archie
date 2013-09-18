@@ -14,7 +14,7 @@
     /// <summary>
     /// Route parser singleton.
     /// </summary>
-    private static MvcRouteParser parser;
+    private static RouteParser parser;
 
     /// <summary>
     /// Register route collection.
@@ -22,29 +22,28 @@
     /// <param name="routes">Collection with routes.</param>
     public static void RegisterRoutes(List<RouteModel> routes)
     {
-      GetEngineImplementation().RegisterRoutes(routes);
+      GetParserImplementation().RegisterRoutes(routes);
     }
 
     /// <summary>
     /// Gets url from route name and given parameters.
     /// </summary>
     /// <param name="routeName">Route name.</param>
-    /// <param name="parameters">Url parametrs.</param>
+    /// <param name="parameters">Url parameters.</param>
     /// <returns>Generated url.</returns>
     public static string RouteUrl(string routeName, Dictionary<string, string> parameters)
     {
-      return GetEngineImplementation().RouteUrl(routeName, parameters);
+      return GetParserImplementation().RouteUrl(routeName, parameters);
     }
 
     /// <summary>
-    /// Gets engine implementation.
+    /// Gets parser implementation.
     /// </summary>
-    /// <returns></returns>
-    private static IRouteParser GetEngineImplementation()
+    /// <returns>Route parser implementation.</returns>
+    private static RouteParser GetParserImplementation()
     {
       if (parser == null)
       {
-        // todo: get from parameter?
         parser = new MvcRouteParser();
       }
 

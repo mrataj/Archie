@@ -24,7 +24,7 @@
 
       foreach (var route in RouteTable.Routes.Where(r => r is Route).Cast<Route>())
       {
-        var routeModel = new RouteModel { Url = route.Url, Name = GetRouteName(route) };
+        var routeModel = new RouteModel { Path = route.Url, Name = GetRouteName(route) };
         routes.Add(routeModel);
       }
 

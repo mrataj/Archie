@@ -8,7 +8,7 @@
     /// <summary>
     /// Gets or sets url pattern for this route.
     /// </summary>
-    public string Url { get; set; }
+    public string Path { get; set; }
 
     /// <summary>
     /// Gets or sets name of this route.
