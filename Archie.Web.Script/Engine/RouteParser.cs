@@ -35,7 +35,7 @@
     /// <param name="routeName">Route name.</param>
     /// <param name="parameters">Url parameters.</param>
     /// <returns>Generated url.</returns>
-    internal string RouteUrl(string routeName, Dictionary<string, string> parameters)
+    internal string RouteUrl(string routeName, Dictionary<string, string>[] parameters)
     {
       if (this.Routes == null)
       {
@@ -62,7 +62,7 @@
     /// <param name="routePath">Route path.</param>
     /// <param name="parameters">Url parameters.</param>
     /// <returns>Generated url.</returns>
-    protected abstract string Parse(string routePath, Dictionary<string, string> parameters);
+    protected abstract string Parse(string routePath, Dictionary<string, string>[] parameters);
 
     #endregion
 

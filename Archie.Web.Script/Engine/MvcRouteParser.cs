@@ -2,7 +2,7 @@
 {
   using System;
   using System.Collections.Generic;
-  
+
   /// <summary>
   /// ASP.NET MVC route parser engine.
   /// </summary>
@@ -14,13 +14,14 @@
     /// <param name="routePath">Route path.</param>
     /// <param name="parameters">Url parameters.</param>
     /// <returns>Generated url.</returns>
-    protected override string Parse(string routePath, Dictionary<string, string> parameters)
+    protected override string Parse(string routePath, Dictionary<string, string>[] parameters)
     {
       string url = routePath;
 
-      foreach (string parameterName in parameters.Keys)
+      foreach (Dictionary<string, string> parameter in parameters)
       {
-        string parameterValue = parameters[parameterName];
+        string parameterName = parameter.Keys[0];
+        string parameterValue = parameter[parameterName];
 
         string searchPattern1 = "{" + parameterName + "}";
         if (url.IndexOf(searchPattern1) >= 0)

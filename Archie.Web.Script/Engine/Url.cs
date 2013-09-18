@@ -1,5 +1,6 @@
 ﻿namespace Archie.Web.Script.Engine
 {
+  using System;
   using System.Collections.Generic;
   using System.Runtime.CompilerServices;
 
@@ -31,7 +32,7 @@
     /// <param name="routeName">Route name.</param>
     /// <param name="parameters">Url parameters.</param>
     /// <returns>Generated url.</returns>
-    public static string RouteUrl(string routeName, Dictionary<string, string> parameters)
+    public static string RouteUrl(string routeName, Dictionary<string, string>[] parameters)
     {
       return GetParserImplementation().RouteUrl(routeName, parameters);
     }
