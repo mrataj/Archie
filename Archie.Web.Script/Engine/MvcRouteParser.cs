@@ -76,7 +76,7 @@
       }
 
       // Remove slash if it comes before ? character
-      url = url.Replace("/?", string.Empty);
+      url = url.Replace("/?", "?");
 
       return url;
     }
