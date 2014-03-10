@@ -146,6 +146,7 @@
     <Compile Include="Provider\RoutesProvider.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\site.css" />
     <Content Include="Global.asax" />
     <Content Include="CodeAnalysisRules.ruleset" />
     <Content Include="Content\less\base.less" />
@@ -153,6 +154,7 @@
     <Content Include="Content\less\validation.less" />
     <Content Include="Content\less\site.less" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="Scripts\archie\archie.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -181,7 +183,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\images\" />
-    <Folder Include="Scripts\Generated\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
