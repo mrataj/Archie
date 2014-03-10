@@ -14,12 +14,7 @@
     {
       this.Routes = new List<RouteModel>();
     }
-
-    /// <summary>
-    /// Gets or sets message.
-    /// </summary>
-    public string Message { get; set; }
-
+    
     /// <summary>
     /// Gets list of registered url routes on server.
     /// </summary>

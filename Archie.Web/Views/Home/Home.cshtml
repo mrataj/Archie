@@ -8,7 +8,8 @@
 
 @model HomeModel
 
-<h2>@Model.Message</h2>
+<div id="qunit"></div>
+<div id="qunit-fixture"></div>
 
 @section Scripts
 {
@@ -21,4 +22,7 @@
       Url.registerRoutes(routes);
     });
   </script>
+
+  @Scripts.Render("~/Scripts/qunit-1.14.0.js")
+  @Scripts.Render("~/Scripts/tests/tests.js")
 }

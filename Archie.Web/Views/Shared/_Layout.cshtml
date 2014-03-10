@@ -4,14 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/Content/qunit-1.14.0.css")
 </head>
 <body>
     @RenderBody()
 
-    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/Scripts/jquery-1.7.1.min.js")
     @Scripts.Render("~/Scripts/archie/archie.js")
-    @RenderSection("scripts", required: false)
+    @RenderSection("scripts", false)
 </body>
 </html>

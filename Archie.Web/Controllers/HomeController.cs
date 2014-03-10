@@ -16,7 +16,7 @@
     /// <returns>View result with home view.</returns>
     public ActionResult Index()
     {
-      var model = new HomeModel { Message = "Hello, Archie!" };
+      var model = new HomeModel();
 
       foreach (var route in RoutesProvider.GetRoutes())
       {

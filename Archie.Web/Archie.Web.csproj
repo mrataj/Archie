@@ -49,9 +49,6 @@
     <CodeAnalysisTreatWarningsAsErrors>True</CodeAnalysisTreatWarningsAsErrors>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="dotless.Core">
-      <HintPath>..\packages\dotless.1.3.1.0\lib\dotless.Core.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -72,9 +69,6 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
-    <Reference Include="EntityFramework">
-      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
@@ -131,7 +125,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Configuration\BundleConfig.cs" />
     <Compile Include="Configuration\FilterConfig.cs" />
     <Compile Include="Configuration\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -146,28 +139,13 @@
     <Compile Include="Provider\RoutesProvider.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\site.css" />
+    <Content Include="Content\qunit-1.14.0.css" />
     <Content Include="Global.asax" />
     <Content Include="CodeAnalysisRules.ruleset" />
-    <Content Include="Content\less\base.less" />
-    <Content Include="Content\less\form.less" />
-    <Content Include="Content\less\validation.less" />
-    <Content Include="Content\less\site.less" />
-    <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Scripts\archie\archie.js" />
-    <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
-    <None Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
-    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
-    <Content Include="Scripts\jquery.validate.js" />
-    <Content Include="Scripts\jquery.validate.min.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\knockout-2.1.0.debug.js" />
-    <Content Include="Scripts\knockout-2.1.0.js" />
-    <Content Include="Scripts\modernizr-2.5.3.js" />
-    <Content Include="Scripts\_references.js" />
+    <Content Include="Scripts\qunit-1.14.0.js" />
+    <Content Include="Scripts\tests\tests.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -181,9 +159,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Home.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Content\images\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
@@ -218,7 +194,8 @@
   </ProjectExtensions>
   <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
   <PropertyGroup>
-    <PostBuildEvent>$(SolutionDir)packages\dotless.1.3.1.0\tool\dotless.Compiler.exe -m "$(ProjectDir)Content\less\site.less" "$(ProjectDir)Content"</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
